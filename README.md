@@ -148,7 +148,7 @@ graph TB
         C --> D[Framer Motion 11.5]
     end
     
-    subgraph Backend Integration
+    subgraph BackendIntegration["Backend Integration"]
         E[n8n Webhook] --> F[Custom API]
         F --> G[Clio API]
     end
@@ -159,11 +159,11 @@ graph TB
         J[Analytics Tracking]
     end
     
-    Frontend --> Backend Integration
+    Frontend --> BackendIntegration
     Frontend --> Features
     
     style Frontend fill:#10b981
-    style Backend Integration fill:#3b82f6
+    style BackendIntegration fill:#3b82f6
     style Features fill:#8b5cf6
 ```
 
