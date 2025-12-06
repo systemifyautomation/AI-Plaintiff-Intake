@@ -548,7 +548,7 @@ Ready to transform your intake process? Book a free consultation:
 
 ## 📄 License
 
-© 2024 AI Plaintiff Intake LLC. All rights reserved.
+© 2025 AI Plaintiff Intake LLC. All rights reserved.
 
 This is proprietary software. Unauthorized copying, distribution, or use is strictly prohibited.
 
