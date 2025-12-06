@@ -3,8 +3,8 @@
 <div align="center">
 
 ![AI Plaintiff Intake](https://img.shields.io/badge/Status-Production%20Ready-success?style=for-the-badge)
-![React](https://img.shields.io/badge/React-18.3-61DAFB?style=for-the-badge&logo=react&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-5.4-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![React](https://img.shields.io/badge/React-19.2-61DAFB?style=for-the-badge&logo=react&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-7.2-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![License](https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge)
 
@@ -12,7 +12,7 @@
 
 *Transform your client intake process with custom-tailored automation that works with any form platform and integrates seamlessly with Clio CRM*
 
-[🎥 Watch Demo](#-demo) • [📖 Documentation](#-documentation) • [🌟 Features](#-key-features) • [🚀 Quick Start](#-quick-start)
+[🌐 Live Demo](https://ai-plaintiff-intake.vercel.app) • [📖 Documentation](#-documentation) • [🌟 Features](#-key-features) • [🚀 Quick Start](#-quick-start)
 
 </div>
 
