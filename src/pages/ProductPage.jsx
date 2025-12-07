@@ -110,13 +110,13 @@ export default function ProductPage() {
     },
     {
       icon: <Shield className="w-8 h-8" />,
-      title: "Enterprise Security",
-      description: "Bank-level encryption, HIPAA compliance, and SOC 2 Type II certification for peace of mind.",
+      title: "Secure & Reliable",
+      description: "Industry-standard security and reliable data handling to keep your client information safe.",
       features: [
-        "256-bit AES encryption",
-        "HIPAA compliant storage",
-        "Role-based access control",
-        "Audit logs"
+        "Encrypted data transmission",
+        "Secure cloud storage",
+        "Regular automated backups",
+        "Protected API connections"
       ]
     }
   ]
