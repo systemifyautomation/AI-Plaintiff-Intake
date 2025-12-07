@@ -38,12 +38,12 @@ export default function Navbar({ onBookConsultation }) {
               </div>
             </div>
             
-            <button
-              onClick={() => onBookConsultation?.('navbar-desktop')}
+            <Link
+              to="/product"
               className="bg-gradient-to-r from-primary-600 to-primary-500 text-black px-6 py-2.5 rounded-lg font-semibold hover:shadow-lg glow-green transform hover:-translate-y-0.5 transition-all"
             >
-              Book a Consultation
-            </button>
+              Get Started
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -93,15 +93,13 @@ export default function Navbar({ onBookConsultation }) {
             >
               Product
             </Link>
-            <button
-              onClick={() => {
-                onBookConsultation?.('navbar-mobile')
-                setIsOpen(false)
-              }}
+            <Link
+              to="/product"
+              onClick={() => setIsOpen(false)}
               className="block w-full bg-gradient-to-r from-primary-600 to-primary-500 text-black px-6 py-2.5 rounded-lg font-semibold text-center glow-green"
             >
-              Book a Consultation
-            </button>
+              Get Started
+            </Link>
           </div>
         </div>
       )}
