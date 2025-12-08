@@ -42,7 +42,7 @@ export default function ConsultationModal({ isOpen, onClose, conversionSource = 
       }
 
       // Send to webhook
-      const response = await fetch('https://n8n.systemify.net/webhook/new-lead-for-AI-plaintiff-intake', {
+      const response = await fetch('https://n8n.srv1186343.hstgr.cloud/webhook/new-lead-for-AI-plaintiff-intake', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
