@@ -3,8 +3,8 @@
 
 export const siteConfig = {
   // Company Information
-  companyName: "AI Plaintiff Intake",
-  companyLegalName: "AI Plaintiff Intake LLC",
+  companyName: "ARBITRIO",
+  companyLegalName: "ARBITRIO LLC",
   companyEmail: "contact@aiplaintiffintake.com",
   supportEmail: "support@aiplaintiffintake.com",
   salesEmail: "sales@aiplaintiffintake.com",

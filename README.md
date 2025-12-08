@@ -1,8 +1,8 @@
-# 🎯 AI Plaintiff Intake
+# 🎯 ARBITRIO
 
 <div align="center">
 
-![AI Plaintiff Intake](https://img.shields.io/badge/Status-Production%20Ready-success?style=for-the-badge)
+![ARBITRIO](https://img.shields.io/badge/Status-Production%20Ready-success?style=for-the-badge)
 ![React](https://img.shields.io/badge/React-19.2-61DAFB?style=for-the-badge&logo=react&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-7.2-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
@@ -20,7 +20,7 @@
 
 ## 📊 Overview
 
-**AI Plaintiff Intake** is a premium, custom-built automation platform designed specifically for small to medium-sized plaintiff law firms. Unlike generic SaaS solutions, this platform is **tailor-made** for your unique workflow, integrating with your existing forms (Tally, Typeform, Google Forms, or custom solutions) and automatically syncing leads to Clio CRM with zero manual data entry.
+**ARBITRIO** is a premium, custom-built automation platform designed specifically for small to medium-sized plaintiff law firms. Unlike generic SaaS solutions, this platform is **tailor-made** for your unique workflow, integrating with your existing forms (Tally, Typeform, Google Forms, or custom solutions) and automatically syncing leads to Clio CRM with zero manual data entry.
 
 ### 💡 The Problem We Solve
 
@@ -62,7 +62,7 @@ graph LR
 
 [![Watch the demo](https://img.youtube.com/vi/ijISXWsyFyw/maxresdefault.jpg)](https://www.youtube.com/watch?v=ijISXWsyFyw)
 
-*Click to watch how AI Plaintiff Intake transforms your client intake process*
+*Click to watch how ARBITRIO transforms your client intake process*
 
 </div>
 
@@ -548,7 +548,7 @@ Ready to transform your intake process? Book a free consultation:
 
 ## 📄 License
 
-© 2025 AI Plaintiff Intake LLC. All rights reserved.
+© 2025 ARBITRIO LLC. All rights reserved.
 
 This is proprietary software. Unauthorized copying, distribution, or use is strictly prohibited.
 
