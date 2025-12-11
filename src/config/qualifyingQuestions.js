@@ -72,41 +72,6 @@ export const qualifyingQuestions = [
       { value: "other-crm", label: "No, using different CRM" },
       { value: "no-crm", label: "No CRM currently" }
     ]
-  },
-  {
-    id: 8,
-    question: "How many hours per week does your team spend on manual data entry?",
-    type: "select",
-    required: true,
-    options: [
-      { value: "", label: "Select range" },
-      { value: "1-5", label: "1-5 hours" },
-      { value: "6-10", label: "6-10 hours" },
-      { value: "11-20", label: "11-20 hours" },
-      { value: "21-30", label: "21-30 hours" },
-      { value: "30+", label: "30+ hours" }
-    ]
-  },
-  {
-    id: 9,
-    question: "What's your biggest challenge with lead intake?",
-    type: "textarea",
-    placeholder: "Tell us about your main pain points...",
-    required: true
-  },
-  {
-    id: 10,
-    question: "When would you like to implement automation?",
-    type: "select",
-    required: true,
-    options: [
-      { value: "", label: "Select timeframe" },
-      { value: "immediately", label: "Immediately / ASAP" },
-      { value: "1-month", label: "Within 1 month" },
-      { value: "2-3-months", label: "2-3 months" },
-      { value: "3-6-months", label: "3-6 months" },
-      { value: "exploring", label: "Just exploring options" }
-    ]
   }
 ]
 
