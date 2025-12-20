@@ -405,7 +405,7 @@ export default function ProductPage() {
           </div>
         </section>
 
-        {/* Investment Approach Section */}
+        {/* Pricing Section */}
         <section className="py-20 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <motion.div
@@ -415,52 +415,148 @@ export default function ProductPage() {
               className="text-center mb-16"
             >
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-                How We Work Together
+                Investment <span className="gradient-text">Tiers</span>
               </h2>
               <p className="text-xl text-gray-400">
-                Every plaintiff firm is unique. We build custom solutions tailored to your exact needs.
+                One-time pricing designed for law firms. Choose your automation level.
               </p>
             </motion.div>
 
             <div className="grid md:grid-cols-3 gap-8">
-              {pricingApproach.map((approach, index) => (
+              {[
+                {
+                  name: 'Basic Intake Automation',
+                  price: '$750',
+                  period: 'one-time',
+                  ideal: 'Solo/small firms (1-3 attorneys)',
+                  buildTime: '4-8 hours',
+                  features: [
+                    'Single intake form (Tally/Typeform/Google)',
+                    'Auto-create Contact + Matter in Clio',
+                    'Map standard + 10 custom fields',
+                    'Automated confirmation emails',
+                    'Email/Slack notifications to firm',
+                    'Basic setup & testing'
+                  ],
+                  popular: false
+                },
+                {
+                  name: 'Smart Intake + Routing',
+                  price: '$1,800',
+                  priceRange: '$1,800 - $2,500',
+                  period: 'one-time',
+                  ideal: 'Mid-size firms (4-15 attorneys)',
+                  buildTime: '12-20 hours',
+                  features: [
+                    'Everything in Basic, plus:',
+                    'Multi-step conditional forms',
+                    'Branching workflows by case type',
+                    'Auto-assign to specific attorneys',
+                    'Tailored follow-up emails/SMS',
+                    'Weekly intake reporting',
+                    'Calendly booking integration',
+                    'Advanced testing & optimization'
+                  ],
+                  popular: true
+                },
+                {
+                  name: 'Full Pipeline Automation',
+                  price: '$4,000',
+                  priceRange: '$4,000 - $6,000+',
+                  period: 'one-time',
+                  maintenance: '$300/mo optional',
+                  ideal: 'Growing & established firms',
+                  buildTime: 'Full implementation',
+                  features: [
+                    'Everything in Smart Routing, plus:',
+                    'Deep Gmail & Calendar integration',
+                    'SMS notifications via Twilio',
+                    'Auto-generated intake PDF summaries',
+                    'Lead scoring & high-value flagging',
+                    'Live dashboards (Data Studio/Looker)',
+                    'Conversion & source tracking',
+                    '90 days of tweaks & support',
+                    'Optional Zapier integrations'
+                  ],
+                  popular: false
+                }
+              ].map((tier, index) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className={`glass-effect rounded-2xl p-8 ${
-                    index === 1 ? 'ring-2 ring-primary-600 premium-shadow scale-105' : ''
+                  className={`relative glass-effect rounded-2xl p-8 ${
+                    tier.popular ? 'ring-2 ring-primary-500 scale-105' : ''
                   }`}
                 >
-                  {index === 1 && (
-                    <div className="bg-gradient-to-r from-primary-600 to-primary-400 text-white text-sm font-semibold px-4 py-1 rounded-full inline-block mb-4">
-                      Most Comprehensive
+                  {tier.popular && (
+                    <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                      <span className="bg-gradient-to-r from-primary-500 to-green-500 text-black px-4 py-1 rounded-full text-sm font-bold">
+                        MOST POPULAR
+                      </span>
                     </div>
                   )}
-                  <h3 className="text-2xl font-bold text-white mb-2">{approach.title}</h3>
-                  <p className="text-gray-400 mb-6">{approach.description}</p>
-                  <ul className="space-y-3 mb-8">
-                    {approach.included.map((item, i) => (
-                      <li key={i} className="flex items-start space-x-2">
-                        <CheckCircle2 className="w-5 h-5 text-primary-500 flex-shrink-0 mt-0.5" />
-                        <span className="text-sm text-gray-300">{item}</span>
+                  <h3 className="text-2xl font-bold text-white mb-3">{tier.name}</h3>
+                  <div className="mb-4">
+                    <span className="text-4xl font-bold gradient-text">{tier.price}</span>
+                    {tier.priceRange && tier.priceRange !== tier.price && (
+                      <span className="text-lg text-gray-400 ml-1">- {tier.priceRange.split(' - ')[1]}</span>
+                    )}
+                    <p className="text-sm text-gray-500 mt-1">{tier.period}</p>
+                    {tier.maintenance && (
+                      <p className="text-xs text-gray-600 mt-1">{tier.maintenance}</p>
+                    )}
+                  </div>
+                  <div className="bg-dark-bg rounded-lg p-3 mb-6">
+                    <p className="text-xs text-gray-500">Ideal for:</p>
+                    <p className="text-white font-semibold text-sm">{tier.ideal}</p>
+                    <p className="text-xs text-gray-600 mt-1">Build time: {tier.buildTime}</p>
+                  </div>
+                  <ul className="space-y-2 mb-8">
+                    {tier.features.map((feature, idx) => (
+                      <li key={idx} className="flex items-start space-x-2">
+                        <CheckCircle2 className={`w-4 h-4 flex-shrink-0 mt-0.5 ${
+                          feature.includes('Everything in') ? 'text-gray-500' : 'text-primary-400'
+                        }`} />
+                        <span className={`text-sm ${
+                          feature.includes('Everything in') ? 'text-gray-400 font-semibold' : 'text-gray-300'
+                        }`}>{feature}</span>
                       </li>
                     ))}
                   </ul>
                   <button
-                    className={`w-full py-3 rounded-lg font-semibold transition-all ${
-                      index === 1
-                        ? 'bg-gradient-to-r from-primary-600 to-primary-400 text-white hover:shadow-lg'
-                        : 'bg-primary-500 text-white hover:bg-primary-600'
+                    onClick={() => {
+                      setConversionSource(`product-pricing-${tier.name.toLowerCase().replace(/\s+/g, '-')}`)
+                      setShowConsultationModal(true)
+                    }}
+                    className={`w-full py-3 rounded-lg font-semibold transition-all transform hover:scale-105 ${
+                      tier.popular
+                        ? 'bg-gradient-to-r from-primary-500 to-green-500 text-black hover:shadow-lg'
+                        : 'bg-dark-bg text-white border border-gray-700 hover:border-primary-500'
                     }`}
                   >
-                    {index === 0 ? 'Book a Consultation' : index === 1 ? 'Schedule Your Demo' : 'Get Your Custom Solution'}
+                    Get Started
                   </button>
                 </motion.div>
               ))}
             </div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center mt-12"
+            >
+              <Link
+                to="/pricing"
+                className="inline-flex items-center space-x-2 text-primary-400 hover:text-primary-300 font-semibold transition"
+              >
+                <span>See Full Pricing Details & Comparison</span>
+                <ArrowRight className="w-5 h-5" />
+              </Link>
+            </motion.div>
           </div>
         </section>
 

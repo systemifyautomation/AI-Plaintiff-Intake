@@ -360,6 +360,140 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* Pricing Section */}
+        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-dark-card border-y border-primary-900/20">
+          <div className="max-w-7xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center mb-16"
+            >
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+                Simple, <span className="gradient-text">Transparent Pricing</span>
+              </h2>
+              <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+                One-time investment, lasting efficiency. Choose the automation level that fits your firm.
+              </p>
+            </motion.div>
+
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
+              {[
+                {
+                  name: 'Basic Intake',
+                  price: '$750',
+                  ideal: 'Solo/small firms (1-3 attorneys)',
+                  features: [
+                    'Single intake form integration',
+                    'Auto-create Contact + Matter in Clio',
+                    'Map up to 10 custom fields',
+                    'Automated confirmation emails',
+                    'Email/Slack notifications'
+                  ],
+                  popular: false
+                },
+                {
+                  name: 'Smart Routing',
+                  price: '$1,800',
+                  priceNote: '- $2,500',
+                  ideal: 'Mid-size firms (4-15 attorneys)',
+                  features: [
+                    'Everything in Basic, plus:',
+                    'Multi-step conditional forms',
+                    'Auto-assign to specific attorneys',
+                    'Tailored follow-up emails/SMS',
+                    'Weekly intake analytics',
+                    'Calendly booking integration'
+                  ],
+                  popular: true
+                },
+                {
+                  name: 'Full Pipeline',
+                  price: '$4,000',
+                  priceNote: '- $6,000+',
+                  ideal: 'Growing & established firms',
+                  features: [
+                    'Everything in Smart Routing, plus:',
+                    'Deep Gmail & Calendar integration',
+                    'Auto-generated PDF summaries',
+                    'Lead scoring & prioritization',
+                    'Live analytics dashboards',
+                    '90 days support included'
+                  ],
+                  popular: false
+                }
+              ].map((tier, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  className={`relative glass-effect p-8 rounded-2xl ${
+                    tier.popular ? 'ring-2 ring-primary-500 scale-105' : ''
+                  }`}
+                >
+                  {tier.popular && (
+                    <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                      <span className="bg-gradient-to-r from-primary-500 to-green-500 text-black px-4 py-1 rounded-full text-sm font-bold">
+                        MOST POPULAR
+                      </span>
+                    </div>
+                  )}
+                  <div className="text-center mb-6">
+                    <h3 className="text-2xl font-bold text-white mb-2">{tier.name}</h3>
+                    <div className="mb-3">
+                      <span className="text-4xl font-bold gradient-text">{tier.price}</span>
+                      {tier.priceNote && <span className="text-gray-400"> {tier.priceNote}</span>}
+                    </div>
+                    <p className="text-sm text-gray-400">{tier.ideal}</p>
+                  </div>
+                  <ul className="space-y-3 mb-6">
+                    {tier.features.map((feature, idx) => (
+                      <li key={idx} className="flex items-start space-x-2">
+                        <CheckCircle2 className={`w-5 h-5 flex-shrink-0 mt-0.5 ${
+                          feature.includes('Everything in') ? 'text-gray-500' : 'text-primary-400'
+                        }`} />
+                        <span className={`text-sm ${
+                          feature.includes('Everything in') ? 'text-gray-400 font-semibold' : 'text-gray-300'
+                        }`}>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <button
+                    onClick={() => {
+                      setConversionSource(`pricing-${tier.name.toLowerCase().replace(' ', '-')}`)
+                      setShowConsultationModal(true)
+                    }}
+                    className={`w-full py-3 rounded-lg font-semibold transition-all ${
+                      tier.popular
+                        ? 'bg-gradient-to-r from-primary-500 to-green-500 text-black hover:shadow-lg'
+                        : 'bg-dark-bg text-white border border-gray-700 hover:border-primary-500'
+                    }`}
+                  >
+                    Get Started
+                  </button>
+                </motion.div>
+              ))}
+            </div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center"
+            >
+              <Link
+                to="/pricing"
+                className="inline-flex items-center space-x-2 text-primary-400 hover:text-primary-300 font-semibold transition"
+              >
+                <span>View Detailed Pricing & Features</span>
+                <ArrowRight className="w-5 h-5" />
+              </Link>
+            </motion.div>
+          </div>
+        </section>
+
         {/* Benefits Section */}
         <section className="py-20 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">

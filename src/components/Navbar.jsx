@@ -20,6 +20,13 @@ export default function Navbar({ onBookConsultation }) {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6">
+            <Link 
+              to="/pricing" 
+              className="text-gray-300 hover:text-primary-400 font-medium transition"
+            >
+              Pricing
+            </Link>
+            
             {/* Support Representative */}
             <div className="flex items-center space-x-3 px-4 py-2 bg-dark-card/50 rounded-lg border border-gray-800">
               <img 
@@ -92,6 +99,13 @@ export default function Navbar({ onBookConsultation }) {
               onClick={() => setIsOpen(false)}
             >
               Product
+            </Link>
+            <Link 
+              to="/pricing" 
+              className="block text-gray-300 hover:text-primary-400 font-medium py-2"
+              onClick={() => setIsOpen(false)}
+            >
+              Pricing
             </Link>
             <Link
               to="/product"
