@@ -60,7 +60,7 @@ graph LR
 
 ### See It In Action
 
-[![Watch the demo](https://img.youtube.com/vi/ijISXWsyFyw/maxresdefault.jpg)](https://www.youtube.com/watch?v=ijISXWsyFyw)
+[![Watch the demo](https://img.youtube.com/vi/dBLajzNCITw/maxresdefault.jpg)](https://www.youtube.com/watch?v=dBLajzNCITw)
 
 *Click to watch how ARBITRIO transforms your client intake process*
 

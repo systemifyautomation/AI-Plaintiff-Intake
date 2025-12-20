@@ -5,8 +5,8 @@ export const siteConfig = {
   // Company Information
   companyName: "ARBITRIO",
   companyLegalName: "ARBITRIO LLC",
-  companyEmail: "contact@aiplaintiffintake.com",
-  supportEmail: "support@aiplaintiffintake.com",
+  companyEmail: "info@aiplaintiffintake.com",
+  supportEmail: "info@aiplaintiffintake.com",
   salesEmail: "sales@aiplaintiffintake.com",
   
   // Contact Information
@@ -27,7 +27,7 @@ export const siteConfig = {
   },
   
   // Website Information
-  website: "https://aiplaintiffintake.com",
+  website: "https://arbitriolegal.com",
   privacyPolicyUrl: "/privacy-policy",
   termsOfServiceUrl: "/terms-of-service",
   documentationUrl: "/documentation",
@@ -37,8 +37,8 @@ export const siteConfig = {
   yearFounded: "2024",
   
   // Consultation Booking
-  calendlyUrl: "https://calendly.com/ai-plaintiff-intake/consultation",
-  demoUrl: "https://calendly.com/ai-plaintiff-intake/demo"
+  calendlyUrl: "https://calendly.com/austin-arbitriolegal/30min",
+  demoUrl: "https://calendly.com/austin-arbitriolegal/30min"
 }
 
 export default siteConfig

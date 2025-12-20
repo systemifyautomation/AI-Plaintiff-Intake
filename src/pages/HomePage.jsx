@@ -605,7 +605,7 @@ export default function HomePage() {
               </button>
               <iframe
                 className="w-full h-full rounded-xl"
-                src="https://www.youtube.com/embed/ijISXWsyFyw?autoplay=1"
+                src="https://www.youtube.com/embed/dBLajzNCITw?autoplay=1"
                 title="How It Works"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

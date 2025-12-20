@@ -249,7 +249,7 @@ export default function ProductPage() {
                   <div className="relative pt-[56.25%]">
                     <iframe
                       className="absolute inset-0 w-full h-full"
-                      src="https://www.youtube.com/embed/ijISXWsyFyw"
+                      src="https://www.youtube.com/embed/dBLajzNCITw"
                       title="Demo Video - Clio Automation"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
