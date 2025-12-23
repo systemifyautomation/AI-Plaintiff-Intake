@@ -381,21 +381,23 @@ export default function HomePage() {
               {[
                 {
                   name: 'Basic Intake',
-                  price: '$750',
+                  price: '$850',
+                  priceNote: '+ $199/mo',
                   ideal: 'Solo/small firms (1-3 attorneys)',
                   features: [
                     'Single intake form integration',
                     'Auto-create Contact + Matter in Clio',
                     'Map up to 10 custom fields',
                     'Automated confirmation emails',
-                    'Email/Slack notifications'
+                    'Email/Slack notifications',
+                    'Unlimited bug fixes & Clio updates'
                   ],
                   popular: false
                 },
                 {
                   name: 'Smart Routing',
-                  price: '$1,800',
-                  priceNote: '- $2,500',
+                  price: '$1,800 - $2,500',
+                  priceNote: '+ $499-$699/mo',
                   ideal: 'Mid-size firms (4-15 attorneys)',
                   features: [
                     'Everything in Basic, plus:',
@@ -409,8 +411,8 @@ export default function HomePage() {
                 },
                 {
                   name: 'Full Pipeline',
-                  price: '$4,000',
-                  priceNote: '- $6,000+',
+                  price: '$4,000 - $6,000+',
+                  priceNote: '+ $999-$1,499/mo',
                   ideal: 'Growing & established firms',
                   features: [
                     'Everything in Smart Routing, plus:',
