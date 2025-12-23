@@ -29,6 +29,7 @@ import siteConfig from '../config/siteConfig'
 export default function ProductPage() {
   const [showConsultationModal, setShowConsultationModal] = useState(false)
   const [conversionSource, setConversionSource] = useState('unknown')
+  
   const integrationSteps = [
     {
       title: "Discovery Call",

@@ -80,7 +80,7 @@ export default function HomePage() {
         />
         <meta 
           name="keywords" 
-          content="Clio automation, plaintiff firm software, law firm lead automation, Clio CRM integration, legal intake automation, plaintiff case management, automated client intake, law firm CRM, legal workflow automation, case intake software, lead capture automation, Tally Clio integration, plaintiff attorney software, law firm efficiency tools, legal tech automation" 
+          content="Clio automation, plaintiff firm software, law firm lead automation, Clio CRM integration, legal intake automation, plaintiff case management, automated client intake, law firm CRM, legal workflow automation, case intake software, lead capture automation, Tally Clio integration, plaintiff attorney software, law firm efficiency tools, legal tech automation, personal injury law firm software, mass tort case management, litigation intake automation, legal client onboarding, law firm productivity software, attorney time tracking, legal practice management, plaintiff law automation, injury law CRM, case intake system, law firm lead generation, legal CRM software, attorney automation tools, legal intake forms, plaintiff attorney CRM, law office automation" 
         />
         
         {/* Open Graph / Facebook */}
@@ -145,7 +145,7 @@ export default function HomePage() {
             "@type": "Organization",
             "name": siteConfig.companyName,
             "url": siteConfig.website,
-            "logo": `${siteConfig.website}/logo.png`,
+            "logo": `${siteConfig.website}/favicon.png`,
             "description": "Lead automation software for plaintiff law firms",
             "contactPoint": {
               "@type": "ContactPoint",

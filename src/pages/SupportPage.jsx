@@ -102,12 +102,19 @@ export default function SupportPage() {
   return (
     <>
       <Helmet>
-        <title>Support | {siteConfig.companyName}</title>
+        <title>Support & Help Center - Clio Automation Support | {siteConfig.companyName}</title>
         <meta 
           name="description" 
-          content={`Get help with ${siteConfig.companyName}. Contact our support team via email, phone, or schedule a consultation. We're here to help your firm succeed.`}
+          content="Get expert support for your Clio lead automation. Contact our team via email, phone, or live chat. Fast, dedicated help for plaintiff law firms. Premium support included with all plans."
+        />
+        <meta 
+          name="keywords" 
+          content="Clio automation support, law firm software help, legal automation assistance, Clio integration support, plaintiff firm help desk, legal tech support, CRM automation help, attorney software support, law firm technical support" 
         />
         <link rel="canonical" href={`${siteConfig.website}/support`} />
+        <meta property="og:title" content="Support & Help Center - Clio Automation Support" />
+        <meta property="og:description" content="Get expert support for your Clio lead automation. Fast, dedicated help for plaintiff law firms." />
+        <meta name="robots" content="index, follow" />
       </Helmet>
 
       <div className="min-h-screen bg-dark-bg bg-dark-gradient">

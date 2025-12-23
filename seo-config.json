@@ -1,0 +1,139 @@
+{
+  "seo": {
+    "siteName": "ARBITRIO",
+    "siteUrl": "https://arbitriolegal.com",
+    "defaultTitle": "ARBITRIO - Clio Lead Automation for Plaintiff Law Firms",
+    "defaultDescription": "Automate lead intake for plaintiff law firms. Connect any form to Clio CRM instantly. Zero lead leakage, 100% error-free data migration. Save 15+ hours weekly.",
+    "defaultKeywords": "Clio automation, plaintiff firm software, law firm lead automation, Clio CRM integration, legal intake automation",
+    "locale": "en_US",
+    "themeColor": "#10b981",
+    "backgroundColor": "#0f172a",
+    "twitterHandle": "@aiplaintiff",
+    "ogImage": "/og-image.jpg",
+    "twitterImage": "/twitter-image.jpg"
+  },
+  "company": {
+    "name": "ARBITRIO",
+    "legalName": "ARBITRIO LLC",
+    "email": "info@aiplaintiffintake.com",
+    "phone": "+1 (251) 373-4661",
+    "address": {
+      "street": "123 Business Avenue",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip": "94105",
+      "country": "United States"
+    }
+  },
+  "social": {
+    "twitter": "https://twitter.com/aiplaintiff",
+    "linkedin": "https://linkedin.com/company/ai-plaintiff-intake",
+    "facebook": "https://facebook.com/aiplaintiff"
+  },
+  "pages": {
+    "home": {
+      "title": "Clio Lead Automation for Plaintiff Firms | Save 15+ Hours Weekly | Risk-Free Setup",
+      "description": "Automate lead intake for plaintiff law firms. Connect any form to Clio CRM instantly. Zero lead leakage, 100% error-free data migration. Free up 15+ hours weekly. Works with Tally, Typeform, Google Forms & more.",
+      "path": "/",
+      "priority": 1.0,
+      "changefreq": "weekly"
+    },
+    "product": {
+      "title": "Product Features - Custom Clio Automation for Plaintiff Firms | Tally-Clio",
+      "description": "Custom-built intake automation for plaintiff firms. Tailored Clio CRM integration, intelligent lead capture, and advanced workflow automation designed specifically for your firm's unique needs.",
+      "path": "/product",
+      "priority": 0.9,
+      "changefreq": "monthly"
+    },
+    "pricing": {
+      "title": "Pricing - Clio Lead Automation for Law Firms",
+      "description": "Transparent pricing for Clio intake automation. Starting at $850 one-time + $199/mo. Choose from Basic, Smart Routing, or Full Pipeline automation packages designed for plaintiff law firms of all sizes. Save 15+ hours weekly.",
+      "path": "/pricing",
+      "priority": 0.9,
+      "changefreq": "monthly"
+    },
+    "documentation": {
+      "title": "Documentation & Integration Guide - Clio Automation Setup",
+      "description": "Comprehensive documentation for Clio lead automation. Learn about custom integration, setup process, security features, API connections, and best practices for plaintiff law firms.",
+      "path": "/documentation",
+      "priority": 0.7,
+      "changefreq": "monthly"
+    },
+    "support": {
+      "title": "Support & Help Center - Clio Automation Support",
+      "description": "Get expert support for your Clio lead automation. Contact our team via email, phone, or live chat. Fast, dedicated help for plaintiff law firms. Premium support included with all plans.",
+      "path": "/support",
+      "priority": 0.7,
+      "changefreq": "monthly"
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "description": "Privacy policy for ARBITRIO - Clio lead automation software",
+      "path": "/privacy-policy",
+      "priority": 0.3,
+      "changefreq": "yearly"
+    }
+  },
+  "targetKeywords": {
+    "primary": [
+      "Clio automation",
+      "law firm lead automation",
+      "plaintiff firm software",
+      "legal intake automation",
+      "Clio CRM integration"
+    ],
+    "secondary": [
+      "case management automation",
+      "attorney workflow automation",
+      "legal tech automation",
+      "law firm productivity software",
+      "automated client intake"
+    ],
+    "longTail": [
+      "Clio lead automation for plaintiff firms",
+      "automated intake forms for law firms",
+      "plaintiff attorney CRM integration",
+      "personal injury law firm automation software",
+      "mass tort case management software"
+    ]
+  },
+  "structuredData": {
+    "organization": {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "ARBITRIO",
+      "url": "https://arbitriolegal.com",
+      "logo": "https://arbitriolegal.com/favicon.png",
+      "description": "Lead automation software for plaintiff law firms",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-251-373-4661",
+        "contactType": "Sales",
+        "email": "info@aiplaintiffintake.com"
+      },
+      "sameAs": [
+        "https://twitter.com/aiplaintiff",
+        "https://linkedin.com/company/ai-plaintiff-intake",
+        "https://facebook.com/aiplaintiff"
+      ]
+    },
+    "softwareApplication": {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "ARBITRIO Clio Lead Automation",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "description": "Plug-and-play lead automation for plaintiff law firms. Automate intake from any form to Clio CRM with zero lead leakage.",
+      "offers": {
+        "@type": "Offer",
+        "price": "850",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "ratingCount": "50"
+      }
+    }
+  }
+}

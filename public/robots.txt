@@ -1,0 +1,20 @@
+# robots.txt for ARBITRIO - Clio Lead Automation
+# Allow all search engines to crawl
+
+User-agent: *
+Allow: /
+
+# Block access to certain files and folders
+Disallow: /api/
+Disallow: /_redirects
+Disallow: /vite.svg
+
+# Sitemap location
+Sitemap: https://arbitriolegal.com/sitemap.xml
+
+# Crawl-delay for specific bots (optional)
+User-agent: GPTBot
+Crawl-delay: 10
+
+User-agent: CCBot
+Crawl-delay: 10

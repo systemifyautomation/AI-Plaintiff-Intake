@@ -119,16 +119,19 @@ export default function DocumentationPage() {
   return (
     <>
       <Helmet>
-        <title>Documentation | {siteConfig.companyName}</title>
+        <title>Documentation & Integration Guide - Clio Automation Setup | {siteConfig.companyName}</title>
         <meta 
           name="description" 
-          content={`Comprehensive documentation for ${siteConfig.companyName}. Learn about our custom automation process, integration methods, security, and best practices.`}
+          content="Comprehensive documentation for Clio lead automation. Learn about custom integration, setup process, security features, API connections, and best practices for plaintiff law firms."
         />
         <meta 
           name="keywords" 
-          content="Clio automation documentation, custom integration guide, plaintiff firm automation, CRM integration setup, legal automation docs, intake automation guide" 
+          content="Clio automation documentation, law firm integration guide, Clio API documentation, custom CRM integration, legal automation setup, plaintiff firm automation guide, Clio webhook integration, intake automation docs, legal tech implementation, law firm API integration" 
         />
         <link rel="canonical" href={`${siteConfig.website}/documentation`} />
+        <meta property="og:title" content="Documentation & Integration Guide - Clio Automation" />
+        <meta property="og:description" content="Complete guide to setting up and using Clio lead automation for plaintiff law firms." />
+        <meta name="robots" content="index, follow" />
       </Helmet>
 
       <div className="min-h-screen bg-dark-bg bg-dark-gradient">

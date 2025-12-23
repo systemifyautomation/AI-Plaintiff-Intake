@@ -94,11 +94,20 @@ export default function PricingPage() {
   return (
     <>
       <Helmet>
-        <title>Pricing - {siteConfig.companyName}</title>
+        <title>Pricing - Clio Lead Automation for Law Firms | {siteConfig.companyName}</title>
         <meta 
           name="description" 
-          content="Transparent pricing for Clio intake automation. Choose from Basic, Smart Routing, or Full Pipeline automation packages designed for law firms of all sizes." 
+          content="Transparent pricing for Clio intake automation. Starting at $850 one-time + $199/mo. Choose from Basic, Smart Routing, or Full Pipeline automation packages designed for plaintiff law firms of all sizes. Save 15+ hours weekly." 
         />
+        <meta 
+          name="keywords" 
+          content="Clio automation pricing, law firm software cost, legal automation pricing, Clio integration cost, plaintiff firm automation pricing, legal intake software cost, law firm CRM pricing, case management software pricing, attorney automation cost, legal tech pricing, law firm efficiency software cost, Clio API integration pricing" 
+        />
+        <link rel="canonical" href="{siteConfig.website}/pricing" />
+        <meta property="og:title" content="Pricing - Clio Lead Automation for Law Firms" />
+        <meta property="og:description" content="Transparent pricing starting at $850. Save 15+ hours weekly with automated lead intake for plaintiff law firms." />
+        <meta property="og:url" content="{siteConfig.website}/pricing" />
+        <meta name="robots" content="index, follow" />
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-b from-dark-bg via-dark-card to-dark-bg">
